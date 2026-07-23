@@ -1,19 +1,28 @@
 matriz = []
 numpar= 0
 li3 = 0
+coluna2 = 0
+#aqui coloco os valores da matriz
 for i in range(3):
     linha = []
     for j in range(3):
         valor = int(input(f"Digite o valor da posiçao [{i}], [{j}]: "))
         linha.append(valor)
     matriz.append(linha)
+# aqui eu encontro os numeros pares da matriz
 for i in range(len(matriz)):
     for j in range(len(matriz[i])):
         if matriz[i][j] %2 == 0:
             numpar+= matriz[i][j]
+# aqui eu somo os valores da terceira coluna
 for i in range(2, -1, -1):
     li3+= matriz[2][i]
+# aqui eu somo os valores da segunda coluna 
+for i in range(3):
+    coluna2+= matriz[i][1]
+# aqui organiza a matriz no formato de tabela no terminal
 for linha in matriz:
     print(linha)
-print(numpar)
-print(li3)
+print(f" a soma dos numeros pares é:{numpar}")
+print(f"a soma dos numeros da terceira coluna é: {li3}")
+print(f"a soma dos numeros da segunda coluna é: {coluna2}")
