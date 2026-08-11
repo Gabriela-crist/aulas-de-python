@@ -2,6 +2,7 @@ matriz = []
 numpar= 0
 li3 = 0
 coluna2 = 0
+colu2fim= 1
 #aqui coloco os valores da matriz
 for i in range(3):
     linha = []
@@ -17,12 +18,16 @@ for i in range(len(matriz)):
 # aqui eu somo os valores da terceira coluna
 for i in range(2, -1, -1):
     li3+= matriz[2][i]
-# aqui eu somo os valores da segunda coluna 
+# aqui eu encontro o maior valor da segunda coluna 
 for i in range(3):
-    coluna2+= matriz[i][1]
+    coluna2= matriz[i][1]
+    if coluna2 > colu2fim:
+        colu2fim = coluna2
+    else:
+        break
 # aqui organiza a matriz no formato de tabela no terminal
 for linha in matriz:
     print(linha)
 print(f" a soma dos numeros pares é:{numpar}")
 print(f"a soma dos numeros da terceira coluna é: {li3}")
-print(f"a soma dos numeros da segunda coluna é: {coluna2}")
+print(f'o maior numero da segunda fileira é {colu2fim}')
