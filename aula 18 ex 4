@@ -17,7 +17,7 @@ for i in range(len(matriz)):
             numpar+= matriz[i][j]
 # aqui eu somo os valores da terceira coluna
 for i in range(2, -1, -1):
-    li3+= matriz[2][i]
+    li3+= matriz[i][2]
 # aqui eu encontro o maior valor da segunda coluna 
 for i in range(3):
     coluna2= matriz[i][1]
