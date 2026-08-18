@@ -16,4 +16,6 @@ while True:
     if per == "N" :
         break
 print("O boletim geral é :")
-print(listnt)
+for aluno in listnt:
+    print(aluno[0],f"{aluno[1]:.1f}")
+
