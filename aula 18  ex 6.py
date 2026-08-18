@@ -1,10 +1,19 @@
+list= []
+listnt= []
 while True:
+    list.clear()
     nom = input("digite o nome do auluno: ")
-    nota = float(input("digite a nota do aluno"))
+    nota1 = float(input("digite a nota do aluno: "))
+    nota2 = float(input("digite a 2ª nota do mesmo aluno: "))
+    media = (nota1 + nota2) / 2
     per = input("ainda tem aluno para cadastrar? S/N: ").upper().strip()
+    list.append(nom)
+    list.append(media)
+    listnt.append(list.copy())
     while per != "S" and per != "N":
         print("resposta errada, tente novamente!")
         per = str(input("ainda tem aluno para cadastrar? S/N: ")).upper().strip()
     if per == "N" :
         break
-    
+print("O boletim geral é :")
+print(listnt)
