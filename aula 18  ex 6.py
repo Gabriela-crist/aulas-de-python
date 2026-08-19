@@ -15,7 +15,7 @@ while True:
         per = str(input("ainda tem aluno para cadastrar? S/N: ")).upper().strip()
     if per == "N" :
         break
-print("O boletim geral é :")
+print(f"{'*'*10}BOLETIM GERAL:{'*'*10}")
 for aluno in listnt:
     print(aluno[0],f"{aluno[1]:.1f}")
 
