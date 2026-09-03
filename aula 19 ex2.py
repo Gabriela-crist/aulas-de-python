@@ -9,7 +9,9 @@ dict2 = {}
 for i, v in dict1.items():
         print(f"{i}tirou {v} no dado")
         sleep(1)
-dict2 = sorted(dict1.items(), key=itemgetter(1), reverse=True)
+print("-"*30)
+dict2 = sorted(dict1.items(), key=itemgetter(1), reverse=True) # VAI ORGANIZAR O DICIONARIO E POR DO MENOR PARA O MAIOR 
 for i, v in enumerate(dict2):
         print(f"{i} lugar: {v[0]} com {v[1]}")
         sleep(2)
+        
