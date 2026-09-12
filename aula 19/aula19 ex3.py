@@ -17,8 +17,9 @@ if dict2["ctps: "] < 35:
      dict2["apos: "]= (f"faltam {aposen} anos para vc aposentar")
 elif dict2["ctps: "] == 35:
     dict2["apos: "]= (f"voce tem {aposen} anos de carteira, ja pode aposentar")
-elif dict2["ctps"] > 35:
-    dict2["apos"]= (f"voce ja é ou deveria estar aposentado")
+elif dict2["ctps: "] > 35:
+    dict2["apos: "]= (f"voce ja é ou deveria estar aposentado")
+print(30*"_-_")
 #printando e organizando o dicionario em linhas separadas
 for i,v in dict2.items():
     print(f"{i}{v}")
