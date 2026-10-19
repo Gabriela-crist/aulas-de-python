@@ -1,7 +1,13 @@
 from random import randint
-def maior(*num):
-    num= randint(maior)
-    
+def maior(lol):
+    for c in range(randint(0,10)):
+        txt= randint(0,10)
+    if txt > 0:
+        max= txt
+    else:
+        min = max
+    print(f"o max é :{max}")
+    print(f"o max é :{min}")
+    print(f"a lista de numeros é:{txt}")
 
-maior=(0,10)
-
+lol = randint(0,10)
