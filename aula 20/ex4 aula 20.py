@@ -1,4 +1,7 @@
-from random import randint 
-for i in range:
-    print(randint)
+from random import randint
+def maior(*num):
+    num= randint(maior)
     
+
+maior=(0,10)
+
