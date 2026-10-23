@@ -1,13 +1,16 @@
 from random import randint
-def maior(lol):
-    for c in range(randint(0,10)):
-        txt= randint(0,10)
+max= min= 0
+def maior(max, min):
+    for c in range(0,10):
+        txt= lol
+        print(f"a lista de numeros é:{txt}")
     if txt > 0:
         max= txt
     else:
         min = max
-    print(f"o max é :{max}")
-    print(f"o max é :{min}")
-    print(f"a lista de numeros é:{txt}")
+    
 
 lol = randint(0,10)
+print(f"o max é :{max}")
+print(f"o max é :{min}")
+maior
