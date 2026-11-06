@@ -1,19 +1,19 @@
 from random import randint
-numeros= []
-def sorteia (*num):
-    for c in range(5):
-        numeros.append(randint(0,60))
-    print(numeros)
+numeros= list()
+def sorteia (lista):
+    for c in range(0,5):
+        lista.append(randint(1, 10))
 
 
-def soma(*num):
+"""def soma(*num):
     pares= 0
     for i, v in enumerate(num):
         for v in num:
             if v % 2 == 0:
                 pares+=v
-    print(pares)
+    print(pares)"""
 
 
-soma(numeros)
+"""soma(numeros)"""
 sorteia(numeros)
+print(numeros)
