@@ -1,6 +1,6 @@
 print( "verificador de parenteses")
 
-num = input("DIGITE SUA CONTE MATEMATICA: ")
+num = input("DIGITE SUA OPERAÇAO ALGEBRICA: ")
 pilha =[]
 for i in num:
     if i == "(":
@@ -15,3 +15,4 @@ if len(pilha) == 0:
     print("sua conta esta correta")
 else:
     print("sua conta esta errada verifique os parenteses")
+    
