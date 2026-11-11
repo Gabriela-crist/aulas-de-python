@@ -1,5 +1,5 @@
 from datetime import date
-ano = int(input("em que ano vc nasceu ?"))
+
 def voto(data):
  if data >= 18 and data < 70:
   print(f"com {data} anos o voto é obrigatorio! ")
@@ -8,6 +8,8 @@ def voto(data):
  elif data >=  70:
   print(f"com {data} anos seu voto é opcional")
 
+
+ano = int(input("em que ano vc nasceu ?"))
 idade= date.today().year - ano
 voto(idade)
 
